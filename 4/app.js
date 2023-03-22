@@ -1,18 +1,17 @@
 function sumInput() {
-    let nums = [];
+    let numbers = [];
     while (true) {
       let input = prompt("Nhập số:");
-      if (input === null || input === "" || isNaN(input)) {
+      if (input === null || input === "" || input === " " || isNaN(input)) {
         break;
       }
-      nums.push(Number(input));
+      numbers.push(Number(input));
     }
     let sum = 0;
-    for (let num of nums) {
-      sum += num;
+    for (let number  of numbers) {
+      sum += number;
     }
-    console.log(sum);
-    console.log(nums);
+    document.getElementById('text').innerHTML = `Tổng các số đã nhập là: ${sum} `
     return sum;
 }
 sumInput();
