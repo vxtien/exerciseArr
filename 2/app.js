@@ -3,7 +3,7 @@ let styles = ["Jazz", "Blues"];
 styles.push("Rock-n-Roll");
 //3
 
-styles.length
+styles.length 
 styles.splice(1,1,"Classics")
 //4
 let style4 = styles.shift();
