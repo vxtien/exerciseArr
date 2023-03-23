@@ -4,6 +4,10 @@ let mary = {name: "Mary", age: 28};
 
 let users = [john, pete, mary];
 
-let names = users.map((user)=> (user.name));
+let text = document.getElementById('text');
+let names = users.map((user)=> {
+    const p =document.createElement('p');
+    p.appendChild(document.createTextNode(`${user.name}`))
+    text.appendChild(p)
+});
 
-console.log(names);

@@ -18,4 +18,5 @@ let users = [
 ];
 
 let result = getAverageAge(users);
+document.getElementById('text').innerHTML = `Độ tuổi trung binh là: ${result} `
 console.log(result);

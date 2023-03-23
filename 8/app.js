@@ -11,4 +11,4 @@ function filterRangerInPlacde(arr, a, b) {
 let arr = [5, 3, 8, 1]
 let arr1 = filterRangerInPlacde(arr, 1, 4);
 
-console.log(arr1);
+document.getElementById('text').innerHTML = `Mảng mới biến đổi là: ${arr1} `

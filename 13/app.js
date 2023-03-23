@@ -13,4 +13,5 @@ let mary = {name: "Mary", age: 28};
 let users = [john, pete, mary];
 
 sortByAge(users)
+console.log(users);
 

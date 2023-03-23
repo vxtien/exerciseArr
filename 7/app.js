@@ -10,7 +10,7 @@ function filter(arr, a, b) {
     return newArr;
 }
 
-let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+let arr = [1,2,3,4,7,8,9,10,11,5,6,12,13];
 let arr1 = filter(arr, 3 ,9);
-console.log(arr1);
-console.log(arr);
+
+document.getElementById('text').innerHTML = `Mảng mới biến đổi là: ${arr1} `

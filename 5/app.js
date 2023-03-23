@@ -19,4 +19,4 @@ function getMaxSubSum(arr) {
 
 let arr = [1, 5, 7, -2, 3, 4, -9, 6];
 let maxSubSum = getMaxSubSum(arr);
-console.log(maxSubSum);
+document.getElementById('text').innerHTML = `Tổng của mảng con liền với các item lớn nhất  là: ${maxSubSum} `
