@@ -3,10 +3,11 @@ function getAverageAge(users) {
       return 0;
     }
     
-    const totalAge = users.reduce((sum, user) => sum + user.age, 0);
-    
-    const averageAge = totalAge / users.length;
-    
+    let sum = 0;
+    for (let i = 0; i< users.length; i++) {
+      sum += users[i].age;
+    }
+    const averageAge = sum / users.length;
     return averageAge;
 }
 
